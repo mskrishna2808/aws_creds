@@ -19,7 +19,7 @@ jobs:
           node-version: 16
       
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@master
         with:
           role-to-assume: arn:aws:iam::416094998479:role/iam-action-role
           aws-region: us-east-1
