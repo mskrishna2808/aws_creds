@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  Testing_sonarqube_report:
+  Testing_aws_logins:
     name: Testing aws logins
     runs-on: self-hosted
     steps:
