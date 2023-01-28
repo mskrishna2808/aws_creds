@@ -9,8 +9,8 @@ jobs:
     name: Testing aws logins
     runs-on: ubuntu-latest
     permissions:
-      id-token: write
-      contents: read
+      id-token: write # This is required for requesting the JWT
+      contents: read # This is required for actions/checkout
     steps:
       - uses: actions/checkout@v3
 
@@ -25,5 +25,5 @@ jobs:
           role-session-name: githubrolesession
           aws-region: us-east-1
 
-      - name: coping text file to s3 bucket
-        run : aws s3 cp file1.txt s3://mskrishna2808
+      - name: copying text file to s3 bucket
+        run : aws s3 cp file1.txt s3://aws-logins-testing
