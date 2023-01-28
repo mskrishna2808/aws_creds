@@ -22,6 +22,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::416094998479:role/github-actions-role
+          role-session-name: githubrolesession
           aws-region: us-east-1
 
       - name: coping text file to s3 bucket
