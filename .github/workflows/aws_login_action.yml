@@ -21,7 +21,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@master
         with:
-          role-to-assume: arn:aws:iam::416094998479:role/iam-action-role
+          role-to-assume: arn:aws:iam::416094998479:role/github-actions-role
           aws-region: us-east-1
 
       - name: coping text file to s3 bucket
