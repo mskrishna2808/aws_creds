@@ -8,9 +8,12 @@ jobs:
   Testing_aws_logins:
     name: Testing aws logins
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v3
-      
+
       - uses: actions/setup-node@v2
         with:
           node-version: 16
