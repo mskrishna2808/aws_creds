@@ -20,7 +20,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::416094998479:role/iam-action-role
-          aws-region: us-east-2
+          aws-region: us-east-1
 
       - name: coping text file to s3 bucket
         run : aws s3 cp file1.txt s3://mskrishna2808
