@@ -22,11 +22,11 @@ provider URL: https://token.actions.githubusercontent.com
 Audience: sts.amazonaws.com
 ```
 
-![Identity Providers](../../images/Identity_Provider.PNG)
+![Identity Providers](../images/Identity_Provider.PNG)
 
 4. Assign a IAM role to Identity Provider
 
-![Assign_Role](../../images/Identity_Provider.PNG)
+![Assign_Role](./images/Identity_Provider.PNG)
 
 
 ```json
